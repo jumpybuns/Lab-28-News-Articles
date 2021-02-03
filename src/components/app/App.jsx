@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../Home/Home.jsx';
+import Search from '../Search/Search';
 
 export default class App extends Component {
   render() {
@@ -14,9 +15,9 @@ export default class App extends Component {
               render={(routerProps) => <Home {...routerProps} />}
             />
             <Route
-              path="/"
+              path="/:search"
               exact
-              render={(routerProps) => <Home {...routerProps} />}
+              render={(routerProps) => <Search {...routerProps} />}
             />
           </Switch>
         </Router>
