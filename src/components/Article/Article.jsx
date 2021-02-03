@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Article = ({ title, author, url }) => (
   <figure>
@@ -9,3 +10,9 @@ const Article = ({ title, author, url }) => (
 );
 
 export default Article;
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+};
