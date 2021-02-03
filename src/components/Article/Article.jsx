@@ -9,10 +9,10 @@ const Article = ({ title, author, url }) => (
   </figure>
 );
 
-export default Article;
-
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 };
+
+export default Article;

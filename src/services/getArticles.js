@@ -1,7 +1,7 @@
 export const getArticles = () => {
   return fetch(
-    `https://newsapi.org/v2/everything&apiKey=${process.env.NEWS_API_KEY}`
+    `http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=2fcc723224a647aa9d6a95beb944cd0d`
   )
     .then((res) => res.json())
-    .then((json) => json.results);
+    .then((json) => json.articles);
 };
