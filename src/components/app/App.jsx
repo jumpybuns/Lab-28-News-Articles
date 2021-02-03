@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from '../Home/Home.jsx';
 
 export default class App extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class App extends Component {
             <Route
               path="/"
               exact
-              render={(routerProps) => <List {...routerProps} />}
+              render={(routerProps) => <Home {...routerProps} />}
             />
           </Switch>
         </Router>
