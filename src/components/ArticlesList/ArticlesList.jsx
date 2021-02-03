@@ -1,4 +1,5 @@
 import React from 'react';
+import Article from '../Article/Article';
 
 const ArticlesList = ({ articles }) => {
   const articleElements = articles.map((article) => (
