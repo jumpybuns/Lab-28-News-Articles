@@ -22,3 +22,5 @@ ArticlesList.propTypes = {
     }).isRequired
   ),
 };
+
+export default ArticlesList;
