@@ -4,7 +4,7 @@ import NewsSearch from '../Search/NewsSearch';
 export default function App() {
   return (
     <>
-      <p>Now What...</p>
+      <h1>Now What...</h1>
       <NewsSearch />
     </>
   );

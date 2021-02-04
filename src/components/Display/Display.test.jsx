@@ -1,12 +1,12 @@
 global.fetch = require('node-fetch');
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import App from './App';
+import Display from './Display';
 
-describe('App component', () => {
+describe('Display component', () => {
   afterEach(() => cleanup());
-  it('renders App', () => {
-    const { asFragment } = render(<App />);
+  it('renders Display', () => {
+    const { asFragment } = render(<Display />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
