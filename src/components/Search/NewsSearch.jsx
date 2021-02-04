@@ -12,17 +12,13 @@ export default class NewsSearch extends Component {
   };
   componentDidMount() {
     this.setState({ loading: true });
-    getArticles().then((articles =>
-      this.setState({ articles }));
-      this.setState({ loading: false });
-
+    getArticles().then((articles) => this.setState({ articles }));
+    this.setState({ loading: false });
   }
 
   handleChange = ({ target }) => {
-    getSearch(target.value).then(articles =>
-      this.setState({ articles }));
-      this.setState({ searchArticles: target.value })
-
+    getSearch(target.value).then((articles) => this.setState({ articles }));
+    this.setState({ searchArticles: target.value });
   };
 
   render() {
