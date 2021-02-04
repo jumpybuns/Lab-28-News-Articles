@@ -26,7 +26,7 @@ export default class NewsSearch extends Component {
   };
 
   render() {
-    const { searchArticles } = this.state;
+    const { searchArticles, articles } = this.state;
     return (
       <div>
         <Search searchArticles={searchArticles} onChange={this.handleChange} />
