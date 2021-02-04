@@ -1,17 +1,15 @@
 import React from 'react';
-import styles from './Search.css';
+import PropTypes from 'prop-types';
 
-const Search = (props) => {
-  return (
-    <div>
-      <label htmlFor="search">Search</label>
-      <input
-        type="text"
-        value={props.inputValue}
-        onChange={props.searchFilterOnChange}
-      />
-    </div>
-  );
+const Search = ({ searchArticles, onChange }) => (
+  <div>
+    <input type="text" value={searchArticles} onChange={onChange} />
+  </div>
+);
+
+Search.propTypes = {
+  searchArticles: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default Search;

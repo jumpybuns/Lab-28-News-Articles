@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 const Article = ({ title, author, description }) => (
   <figure>
-    <figcaption>{title}</figcaption>
-    <figcaption>{author}</figcaption>
-    <figcaption>{description}</figcaption>
+    <h1>{title}</h1>
+    <h2>{author}</h2>
+    <p>{description}</p>
   </figure>
 );
 
