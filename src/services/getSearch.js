@@ -3,5 +3,5 @@ export const getSearch = (search) => {
     `https://newsapi.org/v2/everything?q=${search}&apiKey=c1deae5f91454d8981da476f90b22c43`
   )
     .then((res) => res.json())
-    .then((json) => json.results);
+    .then((json) => json.articles);
 };
