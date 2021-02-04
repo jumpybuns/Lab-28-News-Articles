@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsSearch component renders NewsSearch 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <input
+        type="text"
+        value=""
+      />
+    </div>
+    <ul />
+  </div>
+</DocumentFragment>
+`;
